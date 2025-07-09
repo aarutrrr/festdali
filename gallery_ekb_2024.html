@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Искусство — это магия, которая оживляет каждый момент нашей
+                  жизни. От волшебства живописи и завораживающих звуков музыки
+                  до изысканного танца вкусов и ароматов виноделия, искусство
+                  окружает нас со всех сторон. Оно способно разбудить в нас
+                  эмоции, заставить сердце биться сильнее и унести в мир
+                  фантазий.">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link href="https://fonts.cdnfonts.com/css/neutral-face" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mulish"
+      rel="stylesheet"
+    />
+        <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/adaptive.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="jquery.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js"
+      type="text/javascript"
+    ></script>
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <style>
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .card-circle {
+        border-radius: 100%;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+      }
+
+      .bg-white {
+        background-color: white;
+      }
+      .card img,
+      .card-thirty img,
+      .main-card img,
+      .second-card img {
+        padding: auto;
+        border-radius: 1em;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        margin: auto;
+        opacity: 1;
+        transition: opacity 124ms linear, transform 124ms linear;
+      }
+      .small-card img {
+        padding: auto;
+        border-radius: 100%;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        margin: auto;
+        opacity: 1;
+        transition: opacity 124ms linear, transform 124ms linear;
+      }
+      h2 {
+        text-align: center;
+      }
+      .enter_for_h {
+        /* ЗАГОЛОВОК ДЛЯ ГЛАВНОЙ СТРАНИЦЫ  */
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: left;
+        margin-left: 15px;
+      }
+
+      .container_enter_special {
+        margin-bottom: 50px;
+      }
+      .container {
+        z-index: 2;
+      }
+      .shadow_img {
+        box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+      }
+      .nav-txt:hover {
+        color: #de0000;
+      }
+      .modal-footer {
+        justify-content: center;
+      }
+      @media (max-width: 1300px) {
+        .card {
+          width: 300px;
+        }
+      }
+    </style>
+    <title>ГАЛЕРЕЯ</title>
+  </head>
+  <body>
+    <div class="page">
+      <nav class="navbar navbar-expand-md navbar-black bg-white">
+        <div class="container">
+          <a class="navbar-brand p-0" href="index.html"
+            ><img src="img/blacklogo.png"  width="35"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span><img src="img/list.png" /></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <b
+                  ><a
+                    class="nav-link nav-txt mulish"
+                    aria-current="page"
+                    href="index.html#aboutfest"
+                    >ГЛАВНАЯ</a
+                  ></b
+                >
+              </li>
+              <li class="nav-item">
+                <b
+                  ><a
+                    class="nav-link nav-txt mulish"
+                    aria-current="page"
+                    href="index.html#winter2024"
+                    >СНЕЖНАЯ КОРОЛЕВА</a
+                  ></b
+                >
+              </li>
+              <li class="nav-item">
+                <b
+                  ><a
+                    class="nav-link nav-txt mulish"
+                    aria-current="page"
+                    href="index.html#artfest2024"
+                    >ФЕСТИВАЛЬ В ЕКАТЕРИНБУРГЕ</a
+                  ></b
+                >
+              </li>
+              <li class="nav-item">
+                <b
+                  ><a
+                    class="nav-link nav-txt mulish"
+                    aria-current="page"
+                    href="index.html#contacts"
+                    >КОНТАКТЫ</a
+                  ></b
+                >
+              </li>
+              <li class="nav-item">
+                <b>
+                  <a
+                    class="nav-link nav-txt mulish"
+                    aria-current="page"
+                    href="questions.html"
+                    >ПОПУЛЯРНЫЕ ВОПРОСЫ</a
+                  ></b
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- modal -->
+      <div class="modal" role="dialog" id="modal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 style="text-align: center" class="modal-title">
+                Подтверждение возраста
+              </h2>
+            </div>
+            <div class="modal-body">
+              <p>
+                Для доступа к сайту вам должно быть не менее 18 лет.<br />Пожалуйста,
+                подтвердите это.
+              </p>
+              <p style="font-size: 15px">
+                Чрезмерное употребление алкоголя вредит вашему здоровью.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button class="age-btn-yes" id="btn-yes">
+                Да, мне уже есть 18 лет
+              </button>
+              <button class="age-btn-no" id="btn-no">
+                Нет, мне еще не 18 лет
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- БЛОК 5 -->
+     <div class="top-gallery">
+    <div class="col-n5 container container_enter" id="partners">
+      <div
+        class="row1 card-mg-1 row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3 g-5 mulish" 
+      >
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+                src="img/gallery/1.webp"
+                
+                class="box-shadow gallery-card-image"
+            />
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/2.webp"
+                class="box-shadow gallery-card-image"
+                
+            />
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/3.webp"
+                class="box-shadow gallery-card-image"
+                
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="row1 card-mg-1 row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3 g-5 mulish" 
+      >
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/4.webp"
+                
+                class="box-shadow gallery-card-image"
+            />
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/5.webp"
+                class="box-shadow gallery-card-image"
+                
+            />
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/6.webp"
+                class="box-shadow gallery-card-image"
+                
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="row1 card-mg-1 row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3 g-5 mulish" 
+      >
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/7.webp"
+                
+                class="box-shadow gallery-card-image"
+            />
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/8.webp"
+                class="box-shadow gallery-card-image"
+                
+            />
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/9.webp"
+                class="box-shadow gallery-card-image"
+                
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="row1 card-mg-1 row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3 g-5 mulish" 
+      >
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/10.webp"
+              
+                class="box-shadow gallery-card-image"
+            />
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/11.webp"
+                class="box-shadow gallery-card-image"
+                
+            />
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+                src="img/gallery/12.webp"
+                class="box-shadow gallery-card-image"
+                
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="row1 card-mg-1 row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3 g-5 mulish" 
+      >
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/13.webp"
+                
+                class="box-shadow gallery-card-image"
+            />
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/14.webp"
+                class="box-shadow gallery-card-image"
+                
+            />
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/15.webp"
+                class="box-shadow gallery-card-image"
+                
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="row1  card-mg-1 row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3 g-5 mulish"
+      >
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/16.webp"
+                class="box-shadow gallery-card-image"
+                
+            />
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/17.webp"
+                class="box-shadow gallery-card-image"
+                
+            />
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+              <img
+              src="img/gallery/18.webp"
+                class="box-shadow gallery-card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="row1 card-mg-1 row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3 g-5 mulish"
+      >
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+            <a target="_blank" href="#">
+              <img
+              src="img/gallery/19.webp"
+               
+                class="box-shadow gallery-card-image"
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+            <a target="_blank" href="https://yakorbeer.ru/">
+              <img
+              src="img/gallery/20.webp"
+                class="box-shadow gallery-card-image"
+                
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="gallery-card-image text-white">
+            <a target="_blank" href="https://lodka.moba.market/">
+              <img
+              src="img/gallery/21.webp"
+                class="box-shadow gallery-card-image"
+               
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+    <!-- БЛОК 8 -->
+    <div class="container container_enter_special mulish">
+      <div class="uppercase text-center">
+        <a href="policy.html" style="font-size: 20px"
+          >Политика конфиденциальности</a
+        >
+      </div>
+    </div>
+    <!-- НИЖНЯЯ ЧАСТЬ -->
+    <div class="footer">
+      <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3">
+          <b>
+            <sub
+              ><a class="nav-link neutral-face" aria-current="page" href="#">
+                / ФЕСТИВАЛЬ ИСКУССТВА /</a
+              ></sub
+            ></b
+          >
+        </div>
+      </footer>
+      <footer class="navbar navbar-expand-md navbar-dark bg-dark"></footer>
+    </div>
+    <!-- <script type="text/javascript">
+      jQuery(function ($) {
+        // Ключ localStorage
+        var LS_KEY = "modal_shown";
+      });
+      $(window).on("load", function () {
+        $("#modal").modal("show");
+        if (!localStorage.getItem(LS_KEY)) {
+          setTimeout(function () {
+            $("#modal").modal("show");
+
+            // Сохраняем флаг в localStorage
+            localStorage.setItem(LS_KEY, "1");
+          }, 30 * 1000);
+        }
+      });
+    </script>
+    <script>
+      document.querySelector("#btn-yes").onclick = function () {
+        $("#modal").modal("hide");
+      };
+      document.querySelector("#btn-no").onclick = function () {
+        window.location = "http://www.google.com";
+      };
+    </script> -->
+    <script>
+      $(".phone_mask").mask("+79999999999");
+    </script>
+    <script>
+      async function submitForm(event) {
+        event.preventDefault();
+        try {
+          const response = await fetch(event.target.action, {
+            method: "POST",
+            body: new FormData(event.target),
+          });
+
+          if (!response.ok)
+            throw `Ошибка при обращении к серверу: ${response.status}`;
+
+          const contentType = response.headers.get("content-type");
+          if (!contentType || !contentType.includes("application/json")) {
+            throw "Ошибка. Ответ не JSON";
+          }
+
+          const json = await response.json();
+          if (json.result === "success") {
+            alert(json.info);
+          } else {
+            console.log(json.desc);
+            throw json.info;
+          }
+        } catch (error) {
+          alert(error);
+        }
+      }
+    </script>
+  </body>
+</html>

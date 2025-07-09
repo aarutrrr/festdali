@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Искусство — это магия, которая оживляет каждый момент нашей
+                  жизни. От волшебства живописи и завораживающих звуков музыки
+                  до изысканного танца вкусов и ароматов виноделия, искусство
+                  окружает нас со всех сторон. Оно способно разбудить в нас
+                  эмоции, заставить сердце биться сильнее и унести в мир
+                  фантазий.">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link href="https://fonts.cdnfonts.com/css/neutral-face" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mulish"
+      rel="stylesheet"
+    />
+        <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/adaptive.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="jquery.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js"
+      type="text/javascript"
+    ></script>
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <style>
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .card-circle {
+        border-radius: 100%;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+      }
+
+      .bg-white {
+        background-color: white;
+      }
+      .card img,
+      .card-thirty img,
+      .main-card img,
+      .second-card img {
+        padding: auto;
+        border-radius: 1em;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        margin: auto;
+        opacity: 1;
+        transition: opacity 124ms linear, transform 124ms linear;
+      }
+      .small-card img {
+        padding: auto;
+        border-radius: 100%;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        margin: auto;
+        opacity: 1;
+        transition: opacity 124ms linear, transform 124ms linear;
+      }
+      h2 {
+        text-align: center;
+      }
+      .enter_for_h {
+        /* ЗАГОЛОВОК ДЛЯ ГЛАВНОЙ СТРАНИЦЫ  */
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: left;
+        margin-left: 15px;
+      }
+
+      .container_enter_special {
+        margin-bottom: 50px;
+      }
+      .container {
+        z-index: 2;
+      }
+      .shadow_img {
+        box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+      }
+      .nav-txt:hover {
+        color: #de0000;
+      }
+      .modal-footer {
+        justify-content: center;
+      }
+      @media (max-width: 1300px) {
+        .card {
+          width: 300px;
+        }
+      }
+    </style>
+    <title>ГЛАВНАЯ</title>
+  </head>
+  <body>
+    <div class="page">
+      <nav class="navbar navbar-expand-md navbar-black bg-white">
+        <div class="container">
+          <a class="navbar-brand p-0" href="index.html"
+            ><img src="img/blacklogo.png"  width="35"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span><img src="img/list.png" /></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <b
+                  ><a
+                    class="nav-link nav-txt mulish"
+                    aria-current="page"
+                    href="#aboutfest"
+                    >ГЛАВНАЯ</a
+                  ></b
+                >
+              </li>
+              <li class="nav-item">
+                <b
+                  ><a
+                    class="nav-link nav-txt mulish"
+                    aria-current="page"
+                    href="#winter2024"
+                    >СНЕЖНАЯ КОРОЛЕВА</a
+                  ></b
+                >
+              </li>
+              <li class="nav-item">
+                <b
+                  ><a
+                    class="nav-link nav-txt mulish"
+                    aria-current="page"
+                    href="#artfest2024"
+                    >ФЕСТИВАЛЬ В ЕКАТЕРИНБУРГЕ</a
+                  ></b
+                >
+              </li>
+              <li class="nav-item">
+                <b
+                  ><a
+                    class="nav-link nav-txt mulish"
+                    aria-current="page"
+                    href="#contacts"
+                    >КОНТАКТЫ</a
+                  ></b
+                >
+              </li>
+              <li class="nav-item">
+                <b>
+                  <a
+                    class="nav-link nav-txt mulish"
+                    aria-current="page"
+                    href="questions.html"
+                    >ПОПУЛЯРНЫЕ ВОПРОСЫ</a
+                  ></b
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- modal -->
+      <div class="modal" role="dialog" id="modal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 style="text-align: center" class="modal-title">
+                Подтверждение возраста
+              </h2>
+            </div>
+            <div class="modal-body">
+              <p>
+                Для доступа к сайту вам должно быть не менее 18 лет.<br />Пожалуйста,
+                подтвердите это.
+              </p>
+              <p style="font-size: 15px">
+                Чрезмерное употребление алкоголя вредит вашему здоровью.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button class="age-btn-yes" id="btn-yes">
+                Да, мне уже есть 18 лет
+              </button>
+              <button class="age-btn-no" id="btn-no">
+                Нет, мне еще не 18 лет
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- БЛОК 1 -->
+      <div class="video-bg">
+        <video
+          src="img/themevideo.mp4"
+          type="video/mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <div class="video-bg__content">
+          <div class="container content">
+            <div class="enter_for_h oswald kub-up">
+              <h1
+                style="text-align: center"
+                class="h1_text shadow-txt neutral-face"
+              >
+                НОВОГОДНИЙ КОРПОРАТИВ "СНЕЖНАЯ КОРОЛЕВА"
+              </h1>
+              <h2
+                style="text-align: center"
+                class="h1_text shadow-txt neutral-face"
+              >
+                <b>15 ДЕКАБРЯ 2024</b>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- БЛОК 2 -->
+      <div class="container container_enter" id="aboutfest">
+        <div
+          class="row1 row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 g-5 mulish"
+        >
+          <div class="col">
+            <a href="#">
+              <div class="card-image box-shadow text-white">
+                <img src="img/main_wine2.webp" alt="..." />
+                <div class="card-img-overlay"></div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <div class="main-txt-fest text-page">
+              <h1 class="block-7-text neutral-face shadow-txt">СНЕЖНАЯ КОРОЛЕВА</h1>
+
+              <div style="margin-top: 25px" class="text-black">
+                <p>
+                  А вы знали, что Ганс Христиан Андерсен всегда считал «Снежную королеву» – сказкой всей своей жизни? 
+                  Она тесно связана с жизнью самого писателя. С раннего детства в голове маленького Ганса закладывались основы будущей истории.
+                  Он любил играть с одной соседской девочкой. Её звали Лисбет, она была белокурой и голубоглазой. Мальчик называл её сестрой.
+                  Именно эта девочка стала первой слушательницей, ценительницей и поклонницей литературного дара будущего великого детского писателя. 
+                  Историки считают, что Лисбет на самом деле является прототипом персонажа Герды.
+                </p>
+              </div>
+              <div style="margin-top: 5px" class="text-black">
+                <p>
+                  Образ Снежной королевы тоже взят из жизни. Ганс Христиан был безответно влюблён в некую оперную диву по имени Йенни Линд. Певица была абсолютно равнодушна. 
+                  Так и родился персонаж красавицы, которая напрочь лишена всех чувств.
+                </p>
+              </div>
+              <div style="margin-top: 5px" class="text-black">
+                <p>
+                  15 декабря мы приглашаем вас в уникальное новогоднее путешествие – стать героями знаменитой сказки и прожить историю «изнутри»!
+                  Вместе с ведущими Екатеринбургскими актерами мы по-новому посмотрим на знакомые с детства образы – Снежной красавицы, храброй Герды и заплутавшего Кая!
+                </p>
+              </div>
+              <div style="margin-top: 5px" class="text-black">
+                <p>
+                  А какой праздник без игристого?
+                </p>
+              </div>
+              <div style="margin-top: 5px" class="text-black">
+                <p>
+                  Нас ждут великолепные закуски, море игристого и волшебный фонтан с шампанским, который исполняет заветные желания!
+                  Дресс-код нашего вечера – платина, ведь сказка оживет в уникальной локации – первом в истории России платиновом заводе!
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- БЛОК 3 -->
+
+      <div class="container container_enter">
+        <div class="enter mulish" style="position: center">
+          <h1 class="h1-class shadow-txt margin-bottom neutral-face">
+            ФЕСТИВАЛЬ ИСКУССТВА В ЦИФРАХ
+          </h1>
+        </div>
+        <div
+          class="row1 row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 g-5 mulish"
+        >
+          <div class="col">
+            <div class="block-2-card-image text-white">
+              <img
+                src="img/morewine_2.webp"
+                class="box-shadow block-2-card-image"
+                
+              />
+            </div>
+            <div class="text-black c-text">
+              <p>>30 деятелей искусства</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="block-2-card-image text-white">
+              <img
+                src="img/morepeople.webp"
+                class="box-shadow block-2-card-image"
+                
+              />
+            </div>
+            <div class="text-black c-text">
+              <p>600 гостей и 100 представителей проф. сообщества</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="block-2-card-image text-white">
+              <img
+                src="img/degust_wine_2.webp"
+                class="box-shadow block-2-card-image"
+                
+              />
+            </div>
+            <div class="text-black c-text">
+              <p>встречи с музыкантами, художниками и дегустации</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- БЛОК 4 -->
+      <div class="container container_enter mulish" id="winter2024">
+        <div
+          class="row1 row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 g-5 mulish"
+        >
+          <div class="col">
+            <div class="text-black text-page">
+              <div style="margin-bottom: 5%" class="enter neutral-face">
+                <h3 class="shadow-txt" style="text-align: left">
+                  НОВОГОДНИЙ КОРПОРАТИВ С ЭЛЕМЕНТАМИ КВЕСТА В СТИЛЕ СНЕЖНАЯ КОРОЛЕВА
+                </h3>
+              </div>
+              <p class="main-text small-text-center" style="font-size: 20px">
+                <b>ДАТА:</b>
+              </p>
+              <p class="small-text-center" style="font-size: 20px">
+                15 декабря 2024 года
+              </p>
+              <p class="main-text small-text-center" style="font-size: 20px">
+                <b>ВРЕМЯ ПРОВЕДЕНИЯ:</b>
+              </p>
+              <p class="small-text-center" style="font-size: 20px">
+                18:00 - 22:00
+              </p>
+              <p class="main-text small-text-center" style="font-size: 20px">
+                <b>ПЛОЩАДКА:</b>
+              </p>
+              <p style="font-size: 20px">
+                г. Екатеринбург, Международный центр искусств Главный проспект,
+                пр. Ленина, д. 8
+              </p>
+
+              <p style="font-size: 19px">
+                Аккредитация СМИ -
+                <a href="mailto:info@festdali.ru">info@festdali.ru</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="middle-2-card-image text-white">
+              <img
+                src="img/logo_winter.png"
+                class="middle-2-card-image"
+                
+              />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="text-black">
+              <div class="enter shadow-txt neutral-face">
+                <a
+                  class="left"
+                  style="font-size: 24px; text-align: center"
+                  href="#"
+                  >ПРОГРАММА</a
+                >
+              </div>
+              <hr class="hr" />
+              <div class="enter shadow-txt neutral-face">
+                <a
+                  class="left"
+                  style="font-size: 24px; text-align: center"
+                  href="#partners"
+                >
+                  ПАРТНЁРЫ И ОРГАНИЗАТОРЫ
+                </a>
+              </div>
+              <hr class="hr" />
+              <div class="enter shadow-txt neutral-face">
+                <a
+                  class="left"
+                  style="font-size: 24px; text-align: center"
+                  href="questions.html"
+                >
+                  ПОПУЛЯРНЫЕ ВОПРОСЫ
+                </a>
+              </div>
+              <div class="col-10 col-md-8 col-lg-12 col-xl-12 mx-auto">
+                <a
+                  class="btn-order btn btn-danger btn-lg mulish font-btn btn-block"
+                  href="https://festdali.timepad.ru/event/2999125/"
+                  target="_blank"
+                >
+                  ПРИОБРЕСТИ БИЛЕТ
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- БЛОК 5 -->
+      <div class="container container_enter mulish" id="artfest2024">
+        <div
+          class="row1 row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 g-5 mulish"
+        >
+          <div class="col">
+            <div class="text-black text-page">
+              <div style="margin-bottom: 5%" class="enter neutral-face">
+                <h3 class="shadow-txt" style="text-align: left">
+                  ПРОШЕДШИЙ ФЕСТИВАЛЬ ИСКУССТВА В ЕКАТЕРИНБУРГЕ 2024
+                </h3>
+              </div>
+              <p class="main-text small-text-center" style="font-size: 20px">
+                <b>ДАТА:</b>
+              </p>
+              <p class="small-text-center" style="font-size: 20px">
+                11 мая 2024 года
+              </p>
+              <p class="main-text small-text-center" style="font-size: 20px">
+                <b>ВРЕМЯ ПРОВЕДЕНИЯ:</b>
+              </p>
+              <p class="small-text-center" style="font-size: 20px">
+                11:00 - 22:00
+              </p>
+              <p class="main-text small-text-center" style="font-size: 20px">
+                <b>ПЛОЩАДКА:</b>
+              </p>
+              <p style="font-size: 20px">
+                г. Екатеринбург, Международный центр искусств Главный проспект,
+                пр. Ленина, д. 8
+              </p>
+
+              <p style="font-size: 19px">
+                Аккредитация СМИ -
+                <a href="mailto:info@festdali.ru">info@festdali.ru</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="middle-2-card-image text-white">
+              <img
+                src="img/blacklogo.png"
+                class="middle-2-card-image"
+                
+              />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="text-black">
+              <div class="enter shadow-txt neutral-face">
+                <a
+                  class="left"
+                  style="font-size: 24px; text-align: center"
+                  href="program_ekb_2024.html"
+                  >ПРОГРАММА</a
+                >
+              </div>
+              <hr class="hr" />
+              <div class="enter shadow-txt neutral-face">
+                <a
+                  class="left"
+                  style="font-size: 24px; text-align: center"
+                  href="#partners"
+                >
+                  ПАРТНЁРЫ И ОРГАНИЗАТОРЫ
+                </a>
+              </div>
+              <hr class="hr" />
+              <div class="enter shadow-txt neutral-face">
+                <a
+                  class="left"
+                  style="font-size: 24px; text-align: center"
+                  href="gallery_ekb_2024.html"
+                >
+                  ГАЛЕРЕЯ
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- БЛОК 6 -->
+    <div class="col-n5 container container_enter" id="partners">
+      <div
+        class="row1 card-mg-1 row-cols-6 row-cols-md-7 row-cols-lg-7 row-cols-xl-7 g-5 mulish"
+      >
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://festdali.ru">
+              <img
+                src="img/blacklogo.png"
+                
+                class="box-shadow small-card-image"
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://privetlivan.ru/">
+              <img
+                src="img/livan.png"
+                class="box-shadow small-card-image"
+                
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://sobolevcheese.ru/">
+              <img
+                src="img/sovolevcheese.png"
+                class="box-shadow small-card-image"
+                
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://vk.com/lovely_club_ekb">
+              <img
+                src="img/lovelyclub.png"
+                class="box-shadow small-card-image"
+                
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://vk.com/uvavallis">
+              <img
+                src="img/uvavallis.png"
+                class="box-shadow small-card-image"
+               
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://vk.com/teatr_yarko_ekb">
+              <img
+                src="img/yarko.png"
+                class="box-shadow small-card-image"
+                alt="img"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row1  card-mg-2 row-cols-7 row-cols-md-7 row-cols-lg-7 row-cols-xl-7 g-5 mulish"
+      >
+<div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://alfastroy.group/">
+              <img
+                src="img/alfastroy.png"
+                class="box-shadow small-card-image"
+                alt="img"
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://www.spdeep.com/">
+              <img
+                src="img/soundpark.png"
+                class="box-shadow small-card-image"
+                alt="img"
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://t.me/oystersinthecity">
+              <img
+                src="img/ystrichi.png"
+                
+                class="box-shadow small-card-image"
+            /></a>
+          </div>
+        </div>
+
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://xn--80afbekm3bfai7a.xn--p1ai/">
+              <img
+                src="img/godji.png"
+                class="box-shadow small-card-image"
+                
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://t.me/SvetEKB">
+              <img
+                src="img/svet.png"
+                class="box-shadow small-card-image"
+                
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://cavina.ru/">
+              <img
+                src="img/cavina.png"
+                class="box-shadow small-card-image"
+                
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row1 card-mg-2 row-cols-6 row-cols-md-7 row-cols-lg-7 row-cols-xl-7 g-5 mulish"
+      >
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="#">
+              <img
+                src="img/med.png"
+               
+                class="box-shadow small-card-image"
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://yakorbeer.ru/">
+              <img
+                src="img/yakorbeer.png"
+                class="box-shadow small-card-image"
+                
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://lodka.moba.market/">
+              <img
+                src="img/lodka.png"
+                class="box-shadow small-card-image"
+               
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://thedependentcompany.com/">
+              <img
+                src="img/thedepentlogo.png"
+                class="box-shadow small-card-image"
+                
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://viasalame.ru/">
+              <img
+                src="img/VS_logo.png"
+                class="box-shadow small-card-image"
+                
+            /></a>
+          </div>
+        </div>
+        <div class="col col-n5">
+          <div class="small-card-image text-white">
+            <a target="_blank" href="https://www.bolars.ru/">
+              <img
+                src="img/bolars.png"
+                class="box-shadow small-card-image"
+                
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- БЛОК 7 -->
+    <div class="container container_enter" id="contacts">
+      <div
+        class="row1 row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 g-5 mulish"
+      >
+        <div class="col">
+          <div class="middle-card-image text-white">
+            <img
+              src="img/msg_wine.webp"
+              class="box-shadow middle-card-image"
+              
+            />
+          </div>
+        </div>
+        <div class="col">
+          <h3 class="h3-class neutral-face" style="text-align: center">
+            СВЯЗАТЬСЯ С ОРГАНИЗАТОРАМИ
+          </h3>
+          <h5 class="block-7-text">
+            <a href="mailto:info@festdali.ru">info@festdali.ru</a>
+          </h5>
+          <form
+            class="mulish form_body btn-block"
+            action="send.php"
+            method="post"
+            onsubmit="submitForm(event)"
+            enctype="multipart/form-data"
+            ;
+          >
+            <div class="mb-3">
+              <div class="user-name">
+                <input
+                  type="text"
+                  class="form-control form-control-lg required"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Имя"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="user-phone">
+                <input
+                  type="text"
+                  class="phone_mask form-control form-control-lg required"
+                  id="phone"
+                  name="phone"
+                  placeholder="Номер телефона"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-email">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Электронная почта"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+
+            <div class="form-txt">
+              <textarea
+                placeholder="Сообщение"
+                class="form-control form-control-lg"
+                id="msg"
+                name="msg"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="form-button neutral-face">
+              <button
+                type="submit"
+                class="btn btn-danger btn-lg btn-block"
+                onclick="sendMail()"
+                name="submit"
+                value="Отправить"
+              >
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- БЛОК 8 -->
+    <div class="container container_enter_special mulish">
+      <div class="uppercase text-center">
+        <a href="policy.html" style="font-size: 20px"
+          >Политика конфиденциальности</a
+        >
+      </div>
+    </div>
+    <!-- НИЖНЯЯ ЧАСТЬ -->
+    <div class="footer">
+      <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3">
+          <b>
+            <sub
+              ><a class="nav-link neutral-face" aria-current="page" href="#">
+                / ФЕСТИВАЛЬ ИСКУССТВА /</a
+              ></sub
+            ></b
+          >
+        </div>
+      </footer>
+      <footer class="navbar navbar-expand-md navbar-dark bg-dark"></footer>
+    </div>
+     <script type="text/javascript">
+      jQuery(function ($) {
+        // Ключ localStorage
+        var LS_KEY = "modal_shown";
+      });
+      $(window).on("load", function () {
+        $("#modal").modal("show");
+        if (!localStorage.getItem(LS_KEY)) {
+          setTimeout(function () {
+            $("#modal").modal("show");
+
+            // Сохраняем флаг в localStorage
+            localStorage.setItem(LS_KEY, "1");
+          }, 30 * 1000);
+        }
+      });
+    </script>
+    <script>
+      document.querySelector("#btn-yes").onclick = function () {
+        $("#modal").modal("hide");
+      };
+      document.querySelector("#btn-no").onclick = function () {
+        window.location = "http://www.google.com";
+      };
+    </script>
+    <script>
+      $(".phone_mask").mask("+79999999999");
+    </script>
+    <script>
+      async function submitForm(event) {
+        event.preventDefault();
+        try {
+          const response = await fetch(event.target.action, {
+            method: "POST",
+            body: new FormData(event.target),
+          });
+
+          if (!response.ok)
+            throw `Ошибка при обращении к серверу: ${response.status}`;
+
+          const contentType = response.headers.get("content-type");
+          if (!contentType || !contentType.includes("application/json")) {
+            throw "Ошибка. Ответ не JSON";
+          }
+
+          const json = await response.json();
+          if (json.result === "success") {
+            alert(json.info);
+          } else {
+            console.log(json.desc);
+            throw json.info;
+          }
+        } catch (error) {
+          alert(error);
+        }
+      }
+    </script>
+  </body>
+</html>
